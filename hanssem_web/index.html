@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)한샘</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./js/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="h_wrap">
+            <h1 class="logo">
+                <a href="#">
+                    <img class="white_logo" src="./images/logo(white).png" alt="로고">
+                    <img class="bg_logo" src="./images/logo(black).png" alt="로고">
+                </a>
+            </h1>
+            <div class="menu_button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div><!--모바일 헤더-->
+            <nav>
+                <div class="h_menu">
+                    <h1 class="menu_logo">
+                        <a href="#">
+                            <img src="./images/logo(black).png" alt="메뉴로고(검정)">
+                        </a>
+                    </h1>
+                    <button class="closebtn">
+                        <img src="./images/Xbutton_mobile.png" alt="모바일닫기버튼">
+                    </button>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">기업소개
+                            <img src="./images/plusbutton.png" class="plusbtn">
+                            <img src="./images/minusbutton.png" class="minusbtn">
+                        </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">경영이념</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">연혁 및 수상</a></li>
+                            <li><a href="#">한샘소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">채용안내
+                        <img src="./images/plusbutton.png" class="plusbtn">
+                        <img src="./images/minusbutton.png" class="minusbtn">
+                    </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">RD/KD</a></li>
+                            <li><a href="#">IC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">IR
+                        <img src="./images/plusbutton.png" class="plusbtn">
+                        <img src="./images/minusbutton.png" class="minusbtn">
+                    </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">경영정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">IR자료실</a></li>
+                            <li><a href="#">공시정보</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">지속가능경영
+                        <img src="./images/plusbutton.png" class="plusbtn">
+                        <img src="./images/minusbutton.png" class="minusbtn">
+                    </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">지속가능경영</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">고객감동경영</a></li>
+                            <li><a href="#">가치경영</a></li>
+                            <li><a href="#">R&D</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">사회공헌
+                        <img src="./images/plusbutton.png" class="plusbtn">
+                        <img src="./images/minusbutton.png" class="minusbtn">
+                    </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">한샘 사회공헌</a></li>
+                            <li><a href="#">한샘 사회공헌 소식</a></li>
+                        </ul>                          
+                    </li>
+                    <li><a href="#">고객지원
+                        <img src="./images/plusbutton.png" class="plusbtn">
+                        <img src="./images/minusbutton.png" class="minusbtn">
+                    </a>
+                        <div class="line"></div>
+                        <ul class="submenu">
+                            <li><a href="#">한샘서비스센터</a></li>
+                            <li><a href="#">고객상담</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">대리점 개설 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mobile_menuBox">
+                    <p class="notice1"><a href="#">대리점 개설안내 ></a></p>
+                    <p class="notice2"><a href="#">유통 사업 안내 ></a></p>
+                    <ul class="list">
+                        <li><a href="#">한샘몰</a></li>
+                        <li><a href="#">한샘서비스센터</a></li>
+                    </ul>
+                </div>
+            </nav><!--햄버거 버튼 눌렀을때 모바일 메뉴-->
+        </div><!--h_wrap-->
+        <div class="header_bg"></div>
+    </header><!--header-->
+    <!--메인 이미지 슬라이드 시작-->
+    <main>
+        <div class="mainslide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/banner_m1.jpg" class="mbanner" alt="모바일배너">
+                        <img src="./images/banner1.jpg" class="pcbanner" alt="pc배너">
+                        <div class="bannertextBox box1">
+                            <p class="tit">
+                                한샘의 패키지 설계는<br>
+                                가구가 아니라 공간을 제안합니다
+                            </p>
+                            <p class="txt">
+                                세계적 수준의 디자인 역량과 품질을 바탕으로<br>
+                                아름답고 개성있는 주거 공간을 제안하고 있습니다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/banner_m2.jpg" class="mbanner" alt="모바일배너">
+                        <img src="./images/banner2.jpg" class="pcbanner" alt="pc배너">
+                        <div class="bannertextBox box2">
+                            <p class="tit">
+                                모두의 일상에<br> 가치를 더하는 기업
+                            </p>
+                            <p class="txt">
+                                특정한 사람들만을 위한 인테리어가 아니라,<br>
+                                누구나 꿈꿀 수 있고 누릴 수 있는 편리하고 안락한 공간을 만들고자 합니다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/banner_m4.jpg" class="mbanner" alt="모바일배너">
+                        <img src="./images/banner4.jpg" class="pcbanner" alt="pc배너">
+                        <div class="bannertextBox box3">
+                            <p class="tit">
+                                ‘같이의 가치’ 한샘은<br>
+                                협력과 상생을 통한 가치창출을 추구합니다
+                            </p>
+                            <p class="txt">
+                                한샘은 지속적인 성장, 
+                                상생을 위해 협력사들과의 신뢰를 바탕으로 한 긴밀한 협력을 더욱 확대하고 있습니다. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/banner_m3.jpg" class="mbanner" alt="모바일배너">
+                        <img src="./images/banner3.jpg" class="pcbanner" alt="pc배너">
+                        <div class="bannertextBox box4">
+                            <p class="tit">
+                                한샘의 과거 성장과 미래 혁신을 이어갈<br>원동력은 고객감동 경영입니다
+                            </p>
+                            <p class="pointtxt">
+                                2024 한국 산업의 고객만족도 1위
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div><!--swiper-wrapper-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!--메인 이미지 슬라이드 끝-->
+    </main>
+    <section class="history">
+        <div class="his_text">
+            <p class="date" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">SINCE 1970</p>
+            <p class="maintext maintext_m" data-aos="fade-up" data-aos-delay="500"
+            data-aos-duration="1500">
+                주거 환경의 미래를 열고,<br>
+                부엌 가구의 새로운<br> 
+                <span class="reddot">시대를 창조하다</span>
+            </p>
+            <p class="maintext maintext_p" data-aos="fade-up" data-aos-delay="500"
+            data-aos-duration="1500">
+                주거 환경의 미래를 열고,<br>
+                부엌 가구의 새로운 
+                <span class="reddot">시대를 창조하다</span>
+            </p>
+
+        </div><!--his_text-->
+        <div class="viewmorebtn" data-aos="fade-up" data-aos-delay="500"
+        data-aos-duration="1500">
+            <a href="#">VIEW MORE →</a>
+        </div><!--viewmorebtn-->
+        <!--모바일 연혁 슬라이드 시작-->
+        <div class="history_slide">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/history01.jpg" alt="연혁1">
+                  <div class="history_textbox">
+                    <p class="title">1970. 09</p>
+                    <p class="text">
+                      입식 부엌의 시대가 열리면서 한샘은 부엌 공간을 종합적으로
+                      설계하고 시공하는 새로운 모델을 선보였고, 1970년대
+                      <span>대한민국 입식부엌의 표준</span>을 제시하게 되었습니다.
+                    </p>
+                  </div>
+                </div><!--swiper-slide1-->
+                <div class="swiper-slide">
+                  <img src="./images/history02.jpg" alt="연혁2">
+                  <div class="history_textbox">
+                    <p class="title">1997. 01</p>
+                    <p class="text">
+                      한샘은 1997년 1월 <span>인테리어 사업</span>을 시작하며 <span>
+                      한샘 디자인 파크 1호점</span>인 방배점을 오픈하였고, 
+                      고객들에게 다양한 인테리어 솔루션을 제공하기
+                      시작했습니다.
+                    </p>
+                  </div>
+                </div><!--swiper-slide2-->
+                <div class="swiper-slide">
+                  <img src="./images/history03.jpg" alt="연혁3">
+                  <div class="history_textbox">
+                    <p class="title">2020. 07</p>
+                    <p class="text">
+                      2020년에 국내 가구 업계에서 유일하게 <span>생활환경기술연구소로부터 KOLAS 인증</span>을
+                      획득하며 한샘의 제품은 <span>품질, 안전성, 환경적 영향</span>을 과학적으로 입증하게 되었습니다.
+                    </p>
+                  </div>
+                </div><!--swiper-slide3-->
+                <div class="swiper-slide">
+                  <img src="./images/history04.jpg" alt="연혁4">
+                  <div class="history_textbox">
+                    <p class="title">2024. 02</p>
+                    <p class="text">
+                      32년 만에 <span>브랜드 아이덴티티(BI)</span>를 리뉴얼하여 디지털 환경에
+                      최적화된 현대적인 이미지를 선보이고 시대에 부합하는 유연한 변화를 추구하고 있습니다.
+                    </p>
+                  </div>
+                </div><!--swiper-slide4-->
+              </div><!--swiper-wrapper-->
+            </div><!--swiper-->
+        </div><!--모바일 연혁 슬라이드 끝-->
+
+        <!--pc연혁 슬라이드 시작-->
+        <div class="history_slide_pc">
+            <div class="slidepin">
+                <div class="slide-wrapper">
+                <div class="pin-slide slide1">
+                    <img src="./images/history01.jpg" alt="연혁1">
+                    <div class="history_textbox">
+                    <p class="title">1970. 09</p>
+                    <p class="text">
+                        입식 부엌의 시대가 열리면서 한샘은 부엌 공간을 종합적으로
+                        설계하고 시공하는 새로운 모델을 선보였고, 1970년대
+                        <span>대한민국 입식부엌의 표준</span>을 제시하게 되었습니다.
+                    </p>
+                    </div>
+                </div><!--swiper-slide1-->
+                <div class="pin-slide slide2">
+                    <img src="./images/history02.jpg" alt="연혁2">
+                    <div class="history_textbox">
+                    <p class="title">1997. 01</p>
+                    <p class="text">
+                        한샘은 1997년 1월 <span>인테리어 사업</span>을 시작하며 <span>
+                        한샘 디자인 파크 1호점</span>인 방배점을 오픈하였고, 
+                        고객들에게 다양한 인테리어 솔루션을 제공하기
+                        시작했습니다.
+                    </p>
+                    </div>
+                </div><!--swiper-slide2-->
+                <div class="pin-slide slide3">
+                    <img src="./images/history03.jpg" alt="연혁3">
+                    <div class="history_textbox">
+                    <p class="title">2020. 07</p>
+                    <p class="text">
+                        2020년에 국내 가구 업계에서 유일하게 <span>생활환경기술연구소로부터 KOLAS 인증</span>을
+                        획득하며 한샘의 제품은 <span>품질, 안전성, 환경적 영향</span>을 과학적으로 입증하게 되었습니다.
+                    </p>
+                    </div>
+                </div><!--swiper-slide3-->
+                <div class="pin-slide slide4">
+                    <img src="./images/history04.jpg" alt="연혁4">
+                    <div class="history_textbox">
+                    <p class="title">2024. 02</p>
+                    <p class="text">
+                        32년 만에 <span>브랜드 아이덴티티(BI)</span>를 리뉴얼하여 디지털 환경에
+                        최적화된 현대적인 이미지를 선보이고 시대에 부합하는 유연한 변화를 추구하고 있습니다.
+                    </p>
+                    </div>
+                </div><!--pin-slide4-->
+                </div><!--slide-wrapper-->
+            </div><!--slidepin-->
+        </div><!--history_slide 테블릿부터-->
+    </section><!--since1970부분-->
+    <section class="business">
+        <div class="textBox">
+            <h3 class="text_tit">
+                BUSINESS
+            </h3>
+            <p class="text_txt">
+                한샘은 지속 가능한 환경을 고려한<br>
+                친환경적이며 혁신적인 제품을 개발합니다.
+            </p>
+        </div><!--business제목부분-->
+        <div class="business-swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/business01.jpg" alt="사업1">
+                        <div class="business_text">홈인테리어 유통 전문</div>
+                    </a>
+                </div><!--슬라이드1-->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/business02.jpg" alt="사업2">
+                        <div class="business_text">리하우스 사업</div>
+                    </a>
+                </div><!--슬라이드2-->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/business03.jpg" alt="사업3">
+                        <div class="business_text">홈퍼니싱 사업</div>
+                    </a>
+                </div><!--슬라이드3-->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/business04.jpg" alt="사업4">
+                        <div class="business_text">특판 및 SCM 유통사업</div>
+                    </a>
+                </div><!--슬라이드4-->
+            </div>
+            <div class="swiper-pagination"></div>
+            
+        </div><!--사업부분 슬라이드-->
+    </section><!--business-->
+    <div class="hanssemtext">
+        <div class="han textpoint">HANSSEM<span>,</span>
+            <p class="bg1 bg">HANSSEM</p>
+        </div>
+        <div class="working textpoint">Working for a Better Life
+            <p class="bg2 bg">Working for a Better Life</p>
+        </div>
+        <div class="always textpoint">Always Thinking of Customer
+            <p class="bg3 bg">Always Thinking of Customer</p>
+        </div>
+    </div><!--pc한샘 텍스트 부분-->
+    <section class="csr">
+        <div class="csr_wrap">
+            <div class="csr_t">
+                <div class="csr_textbox">
+                    <p class="csr_tit">CSR</p>
+                    <p class="csr_txt">
+                        우리의 삶 전 영역에 도움을 주는 기업으로 거듭나고자 합니다.
+                    </p>
+                </div>
+                <div class="viewmorebtn">
+                    <a href="#">VIEW MORE →</a>
+                </div><!--viewmorebtn-->
+            </div>
+            <ul class="csr_content">
+                <li class="con1"><a href="#">01 여성가장 자립지원</a></li>
+                <li class="con2"><a href="#">02 장애인 일자리 창출</a></li>
+                <li class="con3"><a href="#">03 행복한 가정 만들기</a></li>
+                <li class="con4"><a href="#">04 임직원 나눔문화 실천</a></li>
+            </ul>
+        </div>
+    </section><!--csr-->
+    <section class="advantage">
+        <div class="textBox">
+            <h3 class="text_tit">
+                ADVANTAGE
+            </h3>
+            <p class="text_txt">
+                한샘은 부엌, 인테리어 가구 부문에서<br>
+                확고한 국내 1위 기업입니다.
+            </p>
+        </div><!--경쟁력 제목부분-->
+        <div class="advantage_wrap">
+            <div class="ad_box">
+                <div class="imgbox">
+                    <a href="#">
+                    <img src="./images/competitive01.jpg" alt="경쟁력1">
+                    </a>
+                </div>
+                <div class="ad_text">
+                    <div class="ad_tit">
+                        홈 인테리어 토탈 솔루션 제공
+                    </div>
+                    <div class="ad_txt">
+                        세계적 수준의 디자인 역량과 품질을<br>
+                        바탕으로 차별화된 서비스를<br>
+                        제공하고 있습니다
+                    </div>
+                </div>
+            </div><!--ad_box1-->
+            <div class="ad_box">
+                <div class="imgbox">
+                    <a href="#">
+                    <img src="./images/competitive02.jpg" alt="경쟁력2">
+                    </a>
+                </div>
+                <div class="ad_text">
+                    <div class="ad_tit">
+                        온ㆍ오프라인 유통 경쟁력
+                    </div>
+                    <div class="ad_txt">
+                        전국적으로 리하우스대리점과<br>
+                        홈퍼니싱대리점을 통해 한샘 제품을<br> 
+                        독점적으로 공급하고 있습니다
+                    </div>
+                </div>
+            </div><!--ad_box2-->
+            <div class="ad_box">
+                <div class="imgbox">
+                    <a href="#">
+                    <img src="./images/competitive03.jpg" alt="경쟁력3">
+                    </a>
+                </div>
+                <div class="ad_text">
+                    <div class="ad_tit">
+                        원스톱 제조/물류/시공 시스템
+                    </div>
+                    <div class="ad_txt">
+                        전 생산 공정별로 경쟁력 있는 체계를<br> 
+                        갖추고 있으며, 공장별로 전문 라인을<br> 
+                        구축해 생산 효율을 한층 높였습니다<br>
+                    </div>
+                </div>
+            </div><!--ad_box3-->
+            <div class="ad_box">
+                <div class="imgbox">
+                    <a href="#">
+                    <img src="./images/competitive04.jpg" alt="경쟁력4">
+                    </a>
+                </div>
+                <div class="ad_text">
+                    <div class="ad_tit">
+                        고객감동 서비스
+                    </div>
+                    <div class="ad_txt">
+                        고객 접점 전 프로세스에 대해<br> 
+                        지속적인 혁신을 추진하고 고객에게
+                        최고의 품질과 서비스를 제공합니다
+                    </div>
+                </div>
+            </div><!--ad_box4-->
+        </div>
+    </section><!--경쟁력부분-->
+    <section class="news">
+        <div class="news_wrap">
+            <div class="textBox">
+                <h3 class="text_tit">
+                    NEWS & MEDIA
+                </h3>
+                <p class="text_txt">
+                    최신 뉴스를 확인해보세요.
+                </p>
+            </div>
+            <div class="viewmorebtn">
+                <a href="#">VIEW MORE →</a>
+            </div><!--viewmorebtn-->
+        </div><!--news제목부분-->
+        <div class="news_slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="./images/news1.jpg" alt="뉴스1">
+                            </div>
+                            <div class="news_text">
+                                <ul class="news_type">
+                                    <li>2025-02-31</li>
+                                    <li>광고</li>
+                                </ul>
+                                <p class="news_title">
+                                    [한샘] 2025 TREND 좋은 집 프로젝트 _ CASA CREMOSA
+                                </p>
+                            </div>
+                        </a>
+                    </div><!--1-->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="./images/news2.jpg" alt="뉴스2">
+                            </div>
+                            <div class="news_text">
+                                <ul class="news_type">
+                                    <li>2025-02-17</li>
+                                    <li>보도자료</li>
+                                </ul>
+                                <p class="news_title">
+                                    “우리 가족 안심 침실 한샘”, 스테디 컴피 패밀리 침대 선보여
+                                </p>
+                            </div>
+                        </a>
+                    </div><!--2-->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="./images/news3.jpg" alt="뉴스3">
+                            </div>
+                            <div class="news_text">
+                                <ul class="news_type">
+                                    <li>2025-02-14</li>
+                                    <li>보도자료</li>
+                                </ul>
+                                <p class="news_title">
+                                    한샘, 홈 인테리어 왕좌 지켰다
+                                </p>
+                            </div>
+                        </a>
+                    </div><!--3-->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="imgbox">
+                                <img src="./images/news4.jpg" alt="뉴스4">
+                            </div>
+                            <div class="news_text">
+                                <ul class="news_type">
+                                    <li>2020-09-09</li>
+                                    <li>광고영상</li>
+                                </ul>
+                                <p class="news_title">
+                                    [한샘 50주년 영상]ㅣ50년째 당신의 삶과 함께
+                                </p>
+                            </div>
+                        </a>
+                    </div><!--4-->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!--news_slide-->
+    </section><!--news끝-->
+    <section class="shortcut">
+        <ul class="shortcut_wrap">
+            <li class="mall"><a href="#">한샘몰 →</a></li>
+            <li class="servicecenter"><a href="#">한샘서비스센터 →</a></li>
+        </ul>
+    </section><!--바로가기-->
+    <footer>
+        <div class="f_wrap">
+            <div class="joinus">
+                <div class="textBox">
+                    <h3 class="text_tit">
+                        JOIN US.
+                    </h3>
+                    <p class="text_txt">
+                        한샘에서 새로운 도전을 시작하세요
+                    </p>
+                </div>
+                <div class="viewmorebtn">
+                        <a href="#">채용안내 →</a>
+                        <a href="#">지점안내 →</a>
+                </div><!--viewmorebtn-->
+            </div>
+            <div class="f_menu">
+                <ul class="f_main">
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+                <ul class="f_sub">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">사이버감사실</a></li>
+                    <li><a href="#">리하우스 포탈(제휴점 전용)</a></li>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="./images/footerlogo.png" alt="로고">
+                </a>
+            </div>
+            <div class="copyright">
+                All rights reserved. Copyright 2015
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

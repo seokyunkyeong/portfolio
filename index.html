@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./js/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="h_wrap">
+            <h1><a href="#">
+                <img class="logo_m" src="./image/logo.png" alt="로고">
+            </a></h1><!--로고-->
+            <div class="menu_btn">
+                <span></span>
+                <span class="middle"></span>
+                <span></span>
+            </div><!--menu_btn--> 
+        </div><!--h_wrap-->
+        <nav>
+            <div class="menu">
+                <h1 class="menu_logo">
+                    <a href="#">
+                        <img src="./image/logo_m.png" alt="로고">
+                    </a>
+                </h1>
+                <div class="closebtn">
+                    <img src="./image/closebtn.png" alt="닫기버튼">
+                </div>
+                <ul class="gnb">
+                    <li>ABOUT ME</li>
+                    <li>MY SKILLS</li>
+                    <li>PROJECT</li>
+                    <li>GALLERY</li>
+                </ul>
+            </div>
+        </nav>
+    </header><!--헤더-->
+    <main>
+        <div class="imgBox">
+            <img src="./image/main_bg.jpg" alt="메인">
+            <div class="textBox">
+                <p class="name">Seok Yun Gyeong's</p>
+                <p class="portfolio_tit">Web Design<br> 
+                    Portfolio</p>
+            </div>
+            <div class="circle">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </main><!--메인-->
+    <section class="aboutme s1">
+        <h3 class="subtit" data-aos="zoom-in-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000">저에 대해서 소개할게요!</h3>
+        <h2 class="maintit">About Me</h2>
+        <div class="mycontent">
+            <div class="mycontentleft">
+                <div class="photo">
+                    <img src="./image/introduce.jpg" alt="소개사진">
+                </div>
+                <p data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">저는 어떤 상황에서도<br>빠르게 적응하고 유연하게
+                    대처하는<br><span>언제나 밝은 에너지</span>를 뿜어내는<br>
+                    웹디자이너입니다.
+                </p>
+            </div><!--왼쪽 컨텐츠-->
+            <div class="mycontentright">
+                <p class="intro_tit">Introduce</p>
+                <div class="introduce">
+                    <div class="tit">
+                        <p class="name">Name</p>
+                        <p class="birthday">Birth Day</p>
+                        <p class="education">Education</p>
+                        <p class="certificate">Certificate</p>
+                    </div>
+                    <div class="txt">
+                        <p>석윤경</p>
+                        <p>2001.01.26</p>
+                        <ul>
+                            <li><span>2019.02</span>부산관광고등학교 졸업</li>
+                            <li><span>2024.03</span>서울디지털대학교 편입</li>
+                            <li><span>2024.11 -</span>효성직업전문학교</li>
+                            <li><span>2025.04</span>웹디자인기능사반 수료</li>
+                        </ul>
+                        <p class="cer">GTQ그래픽기술자격 1급<br>
+                            SMAT 서비스경영자격 1급<br>
+                            매경 TEST 우수<br>
+                            운전면허 2종보통<br>
+                            패션스타일리스트<br>
+                            바리스타 2급<br>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div><!--오른쪽컨텐츠-->
+        </div><!--mycontent-->
+    </section><!--aboutme섹션-->
+    <section class="myskills s2">
+        <h3 class="subtit" data-aos="zoom-in-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000">제가 사용가능한 툴은요!</h3>
+        <h2 class="maintit">My Skills</h2>
+        <div class="design">
+            <h3>Design Tool</h3>
+            <ul class="design_tool">
+                <li>
+                    <img src="./image/ps.png" alt="포토샵">
+                    <p>photoshop</p>
+                </li>
+                <li>
+                    <img src="./image/ai.png" alt="일러스트">
+                    <p>illustration</p>
+                </li>
+                <li>
+                    <img src="./image/figma.png" alt="피그마">
+                    <p>figma</p>
+                </li>
+            </ul>
+        </div>
+        <div class="webcoding">
+            <h3>Web Coding</h3>
+            <ul class="web_tool">
+                <li>
+                    <img src="./image/html.png" alt="html">
+                    <p>html5</p>
+                </li>
+                <li>
+                    <img src="./image/css.png" alt="css">
+                    <p>css3</p>
+                </li>
+                <li>
+                    <img src="./image/jquery.png" alt="jquery">
+                    <p>jQuery</p>
+                </li>
+            </ul>
+        </div>
+    </section><!--myskills-->
+    <section class="project s3">
+        <h3 class="subtit" data-aos="zoom-in-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000">저의 웹사이트 제작물을 만나보세요!</h3>
+        <h2 class="maintit">Project</h2>
+        <div class="pr1">
+            <div class="pr_bg">
+                <img src="./image/tit01.png" alt="순서">
+            </div>
+            <div class="imgBox">
+                <img src="./image/hanssemweb.png" alt="한샘 목업">
+            </div><!--이미지박스-->
+            <div class="textBox" data-aos="flip-right" data-aos-easing="ease-out-cubic" 
+            data-aos-duration="2000" data-aos-delay="500">
+                <h4>HANSSEM WEB SITE RENEWAL</h4>
+                <h3>한샘 기업형 홈페이지 반응형 리뉴얼</h3>
+                <div class="moretext">
+                    <ul class="moretext_tit" >
+                        <li>● 작업기간</li>
+                        <li>● 사용 프로그램</li>
+                        <li>● 기여도</li>
+                    </ul>
+                    <ul class="moretext_txt">
+                        <li>2주</li>
+                        <li>photoshop, figma, html, css, javascript</li>
+                        <li>100% 개인작업</li>
+                    </ul>
+                </div>
+                <ul class="shortcut">
+                    <li><a href="./hanssem_web/index.html" target="_blank">Web Site</a></li>
+                    <li><a href="./hanssem_web/storyboard/hanssemstoryboard.jpg" target="_blank">Storyboard</a></li>
+                </ul>
+            </div><!--텍스트박스-->
+        </div><!--project첫번째-->
+        <div class="pr2">
+            <div class="pr_bg">
+                <img src="./image/tit02.png" alt="순서">
+            </div>
+            <div class="imgBox">
+                <img src="./image/pcwebtit.jpg" alt="라이트릿PC웹 목업">
+            </div><!--이미지박스-->
+            <div class="textBox" data-aos="flip-left" data-aos-easing="ease-out-cubic" 
+            data-aos-duration="2000">
+                <h4>LighTreat BRANDING DESIGN & PC WEB</h4>
+                <h3>맛과 건강을 한 번에, 가벼운 간식을<br>
+                    판매하는 브랜드
+                </h3>
+                <div class="moretext">
+                    <ul class="moretext_tit">
+                        <li>● 작업기간</li>
+                        <li>● 사용 프로그램</li>
+                        <li>● 기여도</li>
+                    </ul>
+                    <ul class="moretext_txt">
+                        <li>2주</li>
+                        <li>photoshop, illustration, figma,<br> html, css, javascript</li>
+                        <li>100% 개인작업</li>
+                    </ul>
+                </div>
+                <ul class="shortcut">
+                    <li><a href="./pc_lightreat/index.html" target="_blank">Web Site</a></li>
+                    <li><a href="./pc_lightreat/image/storyboard.jpg" target="_blank">Storyboard</a></li>
+                </ul>
+            </div><!--텍스트박스-->
+        </div><!--project첫번째-->
+    </section><!--project-->
+    <section class="gallery s4">
+        <h3 class="subtit" data-aos="zoom-in-right"
+        data-aos-easing="linear"
+        data-aos-duration="1000">저의 디자인 제작물을 만나보세요!</h3>
+        <h2 class="maintit">Gallery</h2>
+        <div class="cafe con">
+            <div class="g_txt">
+                <p>Cafe Banner</p>
+                <a href="./image/popup_banner.jpg" target="_blank"><div></div></a>
+            </div>
+            <div class="imgBox">
+                <img src="./image/webbanner1.jpg" alt="카페배너">
+            </div>
+        </div><!--카페배너-->
+        <div class="marshell con">
+            <div class="g_txt">
+                <p>Marshell Speaker Detail Page</p>
+                <a href="./image/speaker.jpg" target="_blank"><div></div></a>
+            </div>
+            <div class="imgBox">
+                <img src="./image/detailpage.jpg" alt="상세페이지">
+            </div>
+        </div><!--마쉘스피커-->
+        <div class="festival con">
+            <div class="g_txt">
+                <p>Festival Banner</p>
+                <div></div>
+            </div>
+            <div class="imgBox">
+                <img src="./image/festival banner.jpg" alt="축제배너">
+            </div>
+        </div><!--축제배너-->
+         <!--팝업-->
+         <div class="view">
+            <div class="bgclose"></div>
+            <div class="viewWrap">
+                <div class="viewPic"></div><!--이미지가져오기-->
+            </div>
+            <button class="viewclose">CLOSE</button>
+        </div>
+    </section><!--gallery-->
+    <footer>
+        <div class="f_mobile">
+            Thank you for<br>
+            looking at my portfolio.
+        </div><!--모바일푸터-->
+        <div class="f_pc">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        Thank you for looking at my portfolio.
+                    </div>
+                    <div class="swiper-slide">Thank you for 
+                        looking at my portfolio.
+                    </div>
+                    <div class="swiper-slide">Thank you for 
+                        looking at my portfolio.
+                    </div>
+                </div>
+            </div>
+        </div><!--pc푸터-->
+    </footer>
+
+</body>
+</html>

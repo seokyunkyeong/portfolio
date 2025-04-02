@@ -1,0 +1,16 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url(./woff2/Pretendard-Black.woff2) format('woff2'), url(./woff/Pretendard-Black.woff) format('woff');
+}
+
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+button{border: 0; background-color: transparent;}
+input{border: 0; background-color: transparent;}
+img{vertical-align: top;}
+body{color: #111; font-family: 'Pretendard Variable','Pretendard';}
+ 

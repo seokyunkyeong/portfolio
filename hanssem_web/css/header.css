@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*모바일 헤더*/
+header{position: fixed; top: 0; left: 0; z-index: 999;
+width: 100%; height: 60px;
+background-color: transparent;}
+
+.h_wrap{position: relative; width: 100%;
+height: 100%;}
+header .logo {position: absolute;
+top: 50%; left: 15px;
+transform: translateY(-50%);
+width: 180px; height: 18px;}
+header .logo .white_logo{position: relative;}
+header .logo img{width: 100%; height: 100%;
+object-fit: cover;}
+header .logo .bg_logo{display: none; position: absolute;
+    top: 0; left: 0;}
+
+.menu_button{position: absolute;
+top: 50%; right: 10px;
+transform: translateY(-50%);
+cursor: pointer;}
+.menu_button span{display: block;
+width: 28px; height: 4px; margin: 4px;
+background-color: white;}
+/*모바일 메뉴*/
+nav{position: absolute; top: 0; left: 0;
+width: 100%; height: auto;
+margin-left: 100%;}
+nav .h_menu{width: 100%; height: 60px;
+border-bottom: 1px solid #111;
+display: flex; justify-content: space-between;
+align-items: center;background-color: white;} 
+.menu_logo{width: 180px; height: 18px;
+margin-left: 15px;}
+.menu_logo img{width: 100%; height: 100%;
+object-fit: cover;}
+.closebtn{width: 18px; height: 18px;
+margin-right: 15px; cursor: pointer;}
+.closebtn img{width: 100%; height: 100%;
+object-fit: cover;}
+.gnb{padding: 22px 0 22px 22px;
+box-sizing: border-box; background-color: white;}
+.line{width: 0; height: 3px; 
+background-color: #d01818; transition: all 0.5s;}
+.gnb>li>a{display: block;
+    font-size: 20px; line-height: 50px;
+width: 100%; height: 50px; padding-left: 5px;
+ box-sizing: border-box;
+font-weight: 700; position: relative;}
+
+.gnb>li>a>img{position: absolute; top: 50%; right: 10px;
+    transform: translateY(-50%); height: auto;
+width: 15px; height: auto;}
+.gnb>li>a>.minusbtn{display: none;}
+.submenu{margin-bottom: 5px; margin-top: 15px; display: none;}
+.submenu li{margin-left: 20px; box-sizing: border-box; width: 160px; height: 50px;
+    line-height: 50px; font-size: 18px; font-weight: 700;
+color: #3d3d3d;}
+.submenu li:hover{color: #d01818;}
+.mobile_menuBox{width: 100%;
+background-color: rgba(0, 0, 0, 0.9);
+color: white; padding: 15px;
+box-sizing: border-box;
+position: relative; height: 150px;}
+.mobile_menuBox .notice1{padding: 10px;
+position: absolute; top: 20px; right: 10px;}
+.mobile_menuBox .notice2{padding: 10px;
+    position: absolute; top: 50px; right: 10px;}
+.mobile_menuBox p:hover{text-decoration: underline;}
+.mobile_menuBox .list{display: flex; font-size: 20px;
+    font-weight: 600;
+position: absolute; bottom: 20px; left: 20px;}
+.mobile_menuBox .list li::after{content: "|";
+margin-left: 10px; margin-right: 10px;}
+.mobile_menuBox .list li:last-child::after
+{content: "";}
+
+.header_bg{display: none;}
+/*모바일 헤더 끝*/
+
+
+/*테블릿 시작*/
+@media all and (min-width:780px){
+
+    header{height: 80px;}
+    header .logo img{position: relative;}
+    .header_bg{display: none; width: 100%; height: 270px;
+        border-top: 1px solid #111;
+        position: absolute; top: 80px; left: 0;
+         background-color: white /*흰색으로 조정*/}
+    .menu_button{display: none;}
+    nav{margin-left: 0; height: auto;
+    background-color: transparent;}
+    nav .h_menu{display: none;}
+    .mobile_menuBox{display: none;}
+    .gnb{padding: 0; width: 70%;
+        display: flex; color: white;
+        position: absolute; top:10px; right: 2%; z-index: 999;
+        background-color: transparent;}
+    .gnb>li  { width: calc(100% / 6);
+        position: relative;}
+
+    .gnb>li>a>img{display: none;}
+
+    .gnb>li>a{padding-left: 0; width: 100%;
+        height: 60px; line-height: 60px;
+        text-align: center; font-size: 1.5vw;
+        margin-bottom: 10px;
+    }
+    .submenu{width: 100%;
+        display: none; margin: 0;
+    text-align: center;}
+    .submenu li{margin: 0; width: 100%;
+    font-size: 1.3vw; height: 40px; line-height: 40px;}
+    
+
+
+}
+/*테블릿 헤더 끝*/
+
+/*pc헤더 시작*/
+@media all and (min-width:1440px){
+
+header .logo{left: 40px; width: 200px; height: 20px;}
+
+.gnb{width: 65%;}
+.gnb>li>a{font-size: 1vw;}
+.submenu li{font-size: 0.9vw; margin-top: 20px;}
+
+.header_bg{height: 350px;}
+
+
+
+}
+
+
+
+

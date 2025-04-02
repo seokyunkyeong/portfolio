@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+footer{width: 100%; height: 480px;
+background-color: #111;
+color: #dedede;
+padding-top: 50px;}
+.f_wrap{width: 95%; margin: 0 auto;
+    position: relative;}
+footer .textBox{padding: 5px; box-sizing: border-box;
+margin-bottom: 10px; }
+footer .textBox .text_tit{font-size: 50px;
+background-image: url(../images/footerdot.png);
+background-repeat: no-repeat;
+background-size: 15px; padding-left: 10px;
+padding-top: 10px; font-weight: 900;}
+footer .textBox .text_txt{padding-left: 10px;
+margin-top: 10px; font-weight: 500;
+line-height: 1.2; color: #dedede;
+font-size: 20px;}
+footer .viewmorebtn{padding-left: 10px;
+margin-top: 30px; font-size: 14px;}
+footer .viewmorebtn a{padding: 15px 20px;
+border: 1px solid #dedede;
+border-radius: 30px; margin-right: 15px;}
+footer .viewmorebtn a:hover{background-color: #dedede;
+color: #111;}
+.f_menu{}
+.f_main{display: flex; font-size: 12px; text-align: right;
+position: absolute; right: 0; top: 250px;} 
+.f_main li{margin-left: 10px;}
+.f_sub{display:flex; font-size: 10px; text-align: right;
+    position: absolute; right: 0; top: 280px;}
+.f_sub li::after{content: "|";
+margin-left: 3px; margin-right: 3px;} 
+.f_sub li:last-child::after{content: ""; margin-right: 0;
+margin-left: 0}
+.f_sub li:hover{text-decoration: underline;}
+
+.footer_logo{width: 180px; height: auto;
+position: absolute; top: 390px; left: 50%;
+transform: translateX(-50%);}
+.footer_logo img{width: 100%; height: 100%;
+object-fit: cover;}
+.copyright{text-align: center;
+position: absolute; top: 420px;
+left: 50%; transform: translateX(-50%);
+width: 100%; font-size: 12px;}
+
+
+
+/*테블릿 푸터 시작*/
+@media all and (min-width:780px){
+    footer{height: 250px; padding-bottom: 50px;}
+    .f_wrap{width: 90%;}
+    footer .viewmorebtn{
+    margin-top: 40px;}
+    .f_main{font-size: 13px;
+    top: 50px;}
+    .f_sub{font-size: 12px;
+    top: 90px;}
+    .footer_logo{top: 200px;}
+    .copyright{top: 230px;
+    font-size: 14px;}
+}/*테블릿 푸터 끝*/
+
+
+/*pc 푸터 시작*/
+@media all and (min-width:1440px){
+    footer{height: 200px}
+    .f_wrap{width: 70%}
+    .f_main{font-size: 14px;}
+        .f_sub{font-size: 14px;}
+        .f_main li{margin-left: 14px;}
+    .footer_logo{top: 150px; left: unset; right: 0;
+    transform: unset;}
+    .copyright{top: 180px; left: unset; right: 0;
+    font-size: 14px; transform: unset; text-align: right;}
+}/*pc 푸터 끝*/
