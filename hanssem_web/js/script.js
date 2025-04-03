@@ -212,9 +212,9 @@ $(document).ready(function(){
 
       let point = gsap.timeline();
 
-      point.from(".hanssemtext .han",{autoAlpha:0, x:500})
-      point.from(".hanssemtext .working",{autoAlpha:0, x:-500})
-      point.from(".hanssemtext .always",{autoAlpha:0, x:500})
+      point.from(".hanssemtext .han",{autoAlpha:0, x:200})
+      point.from(".hanssemtext .working",{autoAlpha:0, x:-200})
+      point.from(".hanssemtext .always",{autoAlpha:0, x:200})
       
       ScrollTrigger.create({
         animation:point,

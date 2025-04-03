@@ -372,7 +372,7 @@ transform: translate(-50%,-50%);}
    /*텍스트 강조부분*/
    .hanssemtext{display: block; width: 90%; height: auto;
   margin: 0 auto; padding: 0 0 150px 0; box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; overflow: hidden;}
   .hanssemtext .han{font-size: 7vw;
      margin-bottom: 5px; color: #111; font-weight: 700;
      /*animation: slideup 1s ease-out forwards ;*/}
