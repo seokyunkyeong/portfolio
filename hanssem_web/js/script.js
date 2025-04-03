@@ -279,7 +279,16 @@ $(document).ready(function(){
  
 
         //브라우저가 리사이징될때마다 실행시키기
+        // $(window).resize(function(){
+        //     document.location.reload();
+        // })
+
+        lastWidth = window.innerWidth;
         $(window).resize(function(){
-            document.location.reload();
-        })
+        if(window.innerWidth != lastWidth){
+            location.reload();
+            scrollTrigger.refresh();
+        }
+        lastWidth = window.innerWidth;
+        });
 })

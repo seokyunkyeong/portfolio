@@ -98,7 +98,7 @@ background-color: #ff6714; color: white;
 padding: 80px 0; box-sizing: border-box;
 text-align: center;}
 .design{width: 90%; margin: 0 auto;}
-.design h3{margin-top: 100px; font-size: 24px;
+.design h3{margin-top: 50px; font-size: 24px;
 width: 100%; border-bottom: 1px solid white;
 padding-bottom: 10px; font-style: italic;
 text-align: right;}
@@ -113,7 +113,7 @@ object-fit: cover;}
 .design_tool li p{margin-top: 10px; font-size: 14px;}
 
 .webcoding{width: 90%; margin: 0 auto;}
-.webcoding h3{margin-top: 70px; font-size: 24px;
+.webcoding h3{margin-top: 50px; font-size: 24px;
     width: 100%; border-bottom: 1px solid white;
     padding-bottom: 10px; font-style: italic;
     text-align: left;}
