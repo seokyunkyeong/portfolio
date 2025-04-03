@@ -129,7 +129,16 @@ $(document).ready(function(){
       }
       
     //브라우저가 리사이징될때마다 실행시키기
-    $(window).resize(function(){
-        document.location.reload();
-    })
+    // $(window).resize(function(){
+    //     document.location.reload();
+    // })
+
+    var delay = 300;
+    var timer = null; 
+    $(window).on('resize', function(){
+      clearTimeout(timer);
+      timer = setTimeout(function(){
+      document.location.reload();
+      }, delay);
+    });
 })//document
