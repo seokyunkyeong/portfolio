@@ -118,15 +118,11 @@ $(document).ready(function(){
         $(".view").stop().fadeOut()
     })
     
-    if (window.innerWidth > 800) {  // 모바일 디바이스가 아닌 경우
+   
         AOS.init({
           once: true  // 애니메이션이 한 번만 실행되도록 설정
         });
-      } else {
-        AOS.init({
-          disable: true  // 모바일에서는 AOS 애니메이션 비활성화
-        });
-      }
+    
       
     //브라우저가 리사이징될때마다 실행시키기
     // $(window).resize(function(){
