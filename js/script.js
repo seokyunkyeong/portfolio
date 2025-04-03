@@ -133,12 +133,20 @@ $(document).ready(function(){
     //     document.location.reload();
     // })
 
-    var delay = 300;
-    var timer = null; 
-    $(window).on('resize', function(){
-      clearTimeout(timer);
-      timer = setTimeout(function(){
-      document.location.reload();
-      }, delay);
+    // var delay = 300;
+    // var timer = null; 
+    // $(window).on('resize', function(){
+    //   clearTimeout(timer);
+    //   timer = setTimeout(function(){
+    //   document.location.reload();
+    //   }, delay);
+    // });
+        lastWidth = window.innerWidth;
+    $(window).resize(function(){
+    if(window.innerWidth != lastWidth){
+        location.reload();
+        scrollTrigger.refresh();
+    }
+    lastWidth = window.innerWidth;
     });
 })//document
