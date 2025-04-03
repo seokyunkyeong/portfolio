@@ -134,7 +134,9 @@ $(document).ready(function(){
         $(".view").stop().fadeOut()
     })
     
-    AOS.init();
+    AOS.init({
+        once:true
+    });
     
 
 
