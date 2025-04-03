@@ -1,14 +1,11 @@
 $(document).ready(function(){
-
     function mobile(){
-
         $(".menu_btn").on("click",function(){
             $("nav").stop().fadeIn()
         })
         $(".closebtn").on("click",function(){
             $("nav").stop().fadeOut()
         })
-        
         //스크롤시 헤더색
         $(document).on("scroll",function(){
             if($(window).scrollTop() > 50){
@@ -19,7 +16,6 @@ $(document).ready(function(){
                 $("header").removeClass("on")            
             }
         })
-
          //메뉴를 클릭하면 해당하는 메뉴로 가기
     $(".gnb>li").on("click",function(){
         let i = $(this).index();
@@ -57,14 +53,11 @@ $(document).ready(function(){
     $(".gnb>li").on("click",function(){
         let i = $(this).index();
         let sec = $("section").eq(i).offset().top
-
-
         //스크롤이 섹션의 offset().top 값만큼 움직여야함
         $("html,body").stop().animate({'scrollTop': sec})
         $(this).addClass("col")
         $(this).siblings().removeClass("col")
     })
-
     //해당하는 구간에 있을때 .gnb>li 색깔 바뀌기
     $(window).on("scroll",function(){
         let scr = $(window).scrollTop();
@@ -94,7 +87,6 @@ $(document).ready(function(){
         }
         
     })
-
     //푸터 글자흐름
     let swiperTop = new Swiper(".swiper", {
         autoplay: {
@@ -106,8 +98,6 @@ $(document).ready(function(){
     speed:8000,
     });
 
-
-
     }//pc함수
 
     let winwid = $(window).width();
@@ -116,12 +106,6 @@ $(document).ready(function(){
     }else{
         pc()
     }
-
-    //브라우저가 리사이징될때마다 실행시키기
-    $(window).resize(function(){
-        document.location.reload();
-    })
-
     //축제팝업
     $(".gallery .festival").on("click",function(){
         let photo = $(this).find(".imgBox").html();
@@ -134,10 +118,18 @@ $(document).ready(function(){
         $(".view").stop().fadeOut()
     })
     
-    AOS.init({
-        once:true
-    });
-    
-
-
+    if (window.innerWidth > 800) {  // 모바일 디바이스가 아닌 경우
+        AOS.init({
+          once: true  // 애니메이션이 한 번만 실행되도록 설정
+        });
+      } else {
+        AOS.init({
+          disable: true  // 모바일에서는 AOS 애니메이션 비활성화
+        });
+      }
+      
+    //브라우저가 리사이징될때마다 실행시키기
+    $(window).resize(function(){
+        document.location.reload();
+    })
 })//document
