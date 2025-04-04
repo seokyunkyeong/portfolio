@@ -117,13 +117,23 @@ $(document).ready(function(){
     $(".viewclose, .bgclose").on("click",function(){
         $(".view").stop().fadeOut()
     })
-    
-   
+        
+
+    // gsap.fromTo("main .textBox span",5,{"background-size": "0% 100%"},
+    //     {"background-size": "100% 100%"})
+
+        let t2 = gsap.timeline()
+        t2.fromTo('main .textBox .m_t1',1.5,{"background-size": "0% 100%"},
+            {"background-size": "100% 100%"})
+        .fromTo('main .textBox .m_t2',3.5,{"background-size": "0% 100%"},
+            {"background-size": "100% 100%"})
+
+
+
         AOS.init({
           once: true  // 애니메이션이 한 번만 실행되도록 설정
         });
     
-      
     //브라우저가 리사이징될때마다 실행시키기
     // $(window).resize(function(){
     //     document.location.reload();
