@@ -45,7 +45,7 @@ main .imgBox img{width: 100%; height: 100%;
 object-fit: cover;} */
 main .textBox{width: 100%; text-align: center;
 position: absolute;
-top: 50%; left: 50%; transform: translate(-50%,-50%);}
+top: 40%; left: 50%; transform: translate(-50%,-50%);}
 main .textBox .name{font-size: 20px;font-family:'Paperlogy-8ExtraBold';
 margin-bottom: 30px;}
 main .textBox .portfolio_tit{font-size: 50px;
@@ -263,6 +263,9 @@ font-style: italic; letter-spacing: 1px;}
 
 /*테블릿*/
 @media all and (min-width:800px){
+    main .textBox{
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%,-50%);}
     main .textBox .name{font-size: 30px;}
     main .textBox .portfolio_tit{font-size: 60px;}
     /* main .circle .left{width: 80px;
